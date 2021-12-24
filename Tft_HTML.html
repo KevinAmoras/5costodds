@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8" />
+   <title>TFT 5 cost chance</title>
+   <link href="fourm.css" rel="stylesheet" />
+   <script src="TFTmath.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <p>This site is meant to calculate the chance of you getting a specific 5 cost at different levels</p>
+    <form action="bruhbruh" method="post" id="bruh">
+    <ul>
+     <li>
+       <label for="numerator">how many of that unit do you have?(2 stars count as 3) </label>
+       <select name="numerator" id="numerator">
+        <option value ="0">0</option>
+        <option value ="1">1</option>
+        <option value ="2">2</option>
+        <option value ="3">3</option>
+        <option value ="4">4</option>
+        <option value ="5">5</option>
+        <option value ="6">6</option>
+        <option value ="7">7</option>
+        <option value ="8">8</option>
+        <option value ="9">9</option>
+        <option value ="10">10</option>
+        </select>             
+     </li>
+     <li>
+            <label for="quantity">How many 5 cots are in use in the lobby?(ie. on field or in someones bench. include your own units):</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="80">    
+     </li>
+     <li>
+        <label for="numerator">what level are you? (11 is 10 with the high end shopping augment) </label>
+        <select name="level" id="level">
+         <option value ="0.01">7</option>
+         <option value ="0.05">8</option>
+         <option value ="0.15">9</option>
+         <option value ="0.25">10</option>
+         <option value ="0.35">11 </option>
+         </select>             
+      </li>           
+      <li><button type="button" id="calculate">calculate</button></li>
+    </ul>
+   </form>
+   <textarea id="innerTextOutput" rows="6" cols="30" readonly>...</textarea>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
